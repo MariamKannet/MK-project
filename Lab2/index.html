@@ -3,149 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <header>
-            <div>Escape.</div>
-            <nav>
-                <a href="#">HOME</a>
-                <a href="">CATEGORIES</a>
-                <a href="">ABOUT</a>
-                <a href="">CONTACT</a>
+    <div class="page__top-panel">
+        <header class="page__menu page__menu_top">
+            <div class="menu__logo">Escape.</div>
+            <nav class="menu__navigation">
+                <a href="#" class="navigation__item">HOME</a>
+                <a href="" class="navigation__item">CATEGORIES</a>
+                <a href="" class="navigation__item">ABOUT</a>
+                <a href="" class="navigation__item">CONTACT</a>
             </nav>
         </header>
-        <div>
-            <h1>Let's do it together.</h1>
-            <h2>We travel the world in search of stories. Come along for the ride.</h2>
-            <button>View Latest Posts</button>
+        <div class="top-panel__text-group">
+            <h1 class="top-panel__main-header">Let's do it together.</h1>
+            <h2 class="top-panel__sub-header">We travel the world in search of stories. Come along for the ride.</h2>
+            <button class="top-panel__button">View Latest Posts</button>
         </div>
     </div>
-    <nav>
-        <a href="">Nature</a>
-        <a href="">Photography</a>
-        <a href="">Relaxation</a>
-        <a href="">Vacation</a>
-        <a href="">Travel</a>
-        <a href="">Adventure</a>
+    <nav class="page__categories-navigation">
+        <a href="" class="categories-navigation__item">Nature</a>
+        <a href="" class="categories-navigation__item">Photography</a>
+        <a href="" class="categories-navigation__item">Relaxation</a>
+        <a href="" class="categories-navigation__item">Vacation</a>
+        <a href="" class="categories-navigation__item">Travel</a>
+        <a href="" class="categories-navigation__item">Adventure</a>
     </nav>
-    <main>
-        <h3>Featured Posts</h3>
-        <div>
-            <div>
-                <p>The Road Ahead</p>
-                <p>The road ahead might be paved - it might not be.</p>
-                <div>
-                    <div>
-                        <img src="./images/MatVogels.png" alt="MatVogels">
-                        <p>Mat Vogels</p>
+    <main class="page__main-content">
+        <h3 class="main-content__header">Featured Posts</h3>
+        <div class="main-content__posts-group">
+            <div class="posts-group__big-post-preview posts-group__big-post-preview_the-road-ahead">
+                <p class="big-post-preview__header">The Road Ahead</p>
+                <p class="big-post-preview__comment">The road ahead might be paved - it might not be.</p>
+                <div class="big-post-preview__footer">
+                    <div class="big-post-preview__author-info">
+                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
+                        <p class="author-info__name">Mat Vogels</p>
                     </div>
-                    <p>September 25, 2015</p>
+                    <div class="big-post-preview__date">September 25, 2015</div>
                 </div>
             </div>
 
-            <div>
-                <div>ADVENTURE</div>
-                <p>From Top Down</p>
-                <p>Once a year, go someplace you’ve never been before.</p>
+            <div class="posts-group__big-post-preview posts-group__big-post-preview_from-top-down">
+                <div class="big-post-preview__label">ADVENTURE</div>
+                <p class="big-post-preview__header">From Top Down</p>
+                <p class="big-post-preview__comment">Once a year, go someplace you’ve never been before.</p>
                 <div>
-                    <div>
-                        <img src="./images/WilliamWong.png" alt="WilliamWong">
-                        <p>William Wong</p>
+                    <di class="big-post-preview__footer"v>
+                        <img src="./images/WilliamWong.png" alt="WilliamWong"  class="author-info__avatar">
+                        <p class="author-info__name">William Wong</p>
                     </div>
-                    <p>September 25, 2015</p>
+                    <div class="big-post-preview__date">September 25, 2015</div>
                 </div>
             </div>
         </div>
-        <h3>Most Recent</h3>
-        <div>
-            <div>
-                <img src="./images/StillStandingTall.png" alt="StillStandingTall">
-                <p>Still Standing Tall</p>
-                <p>Life begins at the end of your comfort zone.</p>
-                <div>
-                    <div>
-                        <img src="./images/WilliamWong.png" alt="WilliamWong">
-                        <p>William Wong</p>
+        <h3 class="main-content__header">Most Recent</h3>
+        <div class="main-content__posts-group">
+            <div class="posts-group__small-post-preview">
+                <img src="./images/StillStandingTall.png" alt="StillStandingTall" class="small-post-preview__image">
+                <p class="small-post-preview__header">Still Standing Tall</p>
+                <p class="small-post-preview__comment">Life begins at the end of your comfort zone.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/WilliamWong.png" alt="WilliamWong" class="author-info__avatar">
+                        <p class="author-info__name">William Wong</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
 
-            <div>
-                <img src="./images/SunnySideUp.png" alt="SunnySideUp">
-                <p>Sunny Side Up</p>
-                <p>No place is ever as bad as they tell you it’s going to be.</p>
-                <div>
-                    <div>
-                        <img src="./images/MatVogels.png" alt="MatVogels">
-                        <p>Mat Vogels</p>
+            <div class="posts-group__small-post-preview">
+                <img src="./images/SunnySideUp.png" alt="SunnySideUp"  class="small-post-preview__image">
+                <p class="small-post-preview__header">Sunny Side Up</p>
+                <p class="small-post-preview__comment">No place is ever as bad as they tell you it’s going to be.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
+                        <p class="author-info__name">Mat Vogels</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
 
-            <div>
-                <img src="./images/WaterFalls.png" alt="WaterFalls">
-                <p>Water Falls</p>
-                <p>We travel not to escape life, but for life not to escape us.</p>
-                <div>
-                    <div>
-                        <img src="./images/MatVogels.png" alt="MatVogels">
-                        <p>Mat Vogels</p>
+            <div class="posts-group__small-post-preview">
+                <img src="./images/WaterFalls.png" alt="WaterFalls"  class="small-post-preview__image">
+                <p class="small-post-preview__header">Water Falls</p>
+                <p class="small-post-preview__comment">We travel not to escape life, but for life not to escape us.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
+                        <p class="author-info__name">Mat Vogels</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
 
-            <div>
-                <img src="./images/ThroughTheMist.png" alt="ThroughTheMist">
-                <p>Through the Mist</p>
-                <p>Travel makes you see what a tiny place you occupy in the world.</p>
-                <div>
-                    <div>
-                        <img src="./images/WilliamWong.png" alt="WilliamWong">
-                        <p>William Wong</p>
+            <div class="posts-group__small-post-preview">
+                <img src="./images/ThroughTheMist.png" alt="ThroughTheMist"  class="small-post-preview__image">
+                <p class="small-post-preview__header">Through the Mist</p>
+                <p class="small-post-preview__comment">Travel makes you see what a tiny place you occupy in the world.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/WilliamWong.png" alt="WilliamWong" class="author-info__avatar">
+                        <p class="author-info__name">William Wong</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
 
-            <div>
-                <img src="./images/AwakenEarly.png" alt="AwakenEarly">
-                <p>Awaken Early</p>
-                <p>Not all those who wander are lost.</p>
-                <div>
-                    <div>
-                        <img src="./images/MatVogels.png" alt="MatVogels">
-                        <p>Mat Vogels</p>
+            <div class="posts-group__small-post-preview">
+                <img src="./images/AwakenEarly.png" alt="AwakenEarly"  class="small-post-preview__image">
+                <p class="small-post-preview__header">Awaken Early</p>
+                <p class="small-post-preview__comment">Not all those who wander are lost.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
+                        <p class="author-info__name">Mat Vogels</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
 
-            <div>
-                <img src="./images/TryItAlways.png" alt="TryItAlways">
-                <p>Try it Always</p>
-                <p>The world is a book, and those who do not travel read only one page.</p>
-                <div>
-                    <div>
-                        <img src="./images/MatVogels.png" alt="MatVogels">
-                        <p>Mat Vogels</p>
+            <div class="posts-group__small-post-preview">
+                <img src="./images/TryItAlways.png" alt="TryItAlways"  class="small-post-preview__image">
+                <p class="small-post-preview__header">Try it Always</p>
+                <p class="small-post-preview__comment">The world is a book, and those who do not travel read only one page.</p>
+                <div class="small-post-preview__footer">
+                    <div class="small-post-preview__author-info">
+                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
+                        <p class="author-info__name">Mat Vogels</p>
                     </div>
-                    <p>9/25/2015</p>
+                    <div class="small-post-preview__date">9/25/2015</div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div>Escape.</div>
-        <nav>
-            <a href="">HOME</a>
-            <a href="">CATEGORIES</a>
-            <a href="">ABOUT</a>
-            <a href="">CONTACT</a>
+    <footer class="page__menu page__menu_footer">
+        <div class="menu__logo">Escape.</div>
+        <nav class="menu__navigation_footer">
+            <a href="#" class="navigation__item">HOME</a>
+            <a href="" class="navigation__item">CATEGORIES</a>
+            <a href="" class="navigation__item">ABOUT</a>
+            <a href="" class="navigation__item">CONTACT</a>
         </nav>
     </footer>
 </body>
