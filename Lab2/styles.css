@@ -109,7 +109,11 @@ h1, h2, h3, h4, h5, p {
 .page__main-content {
     width: 100%;
     background: #F7F7F7;
-    padding: 60px 250px 89px;
+    padding: 0 250px 89px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-content__header {
@@ -119,15 +123,34 @@ h1, h2, h3, h4, h5, p {
     text-align: center;
     padding: 0 13px 16px;
     border-bottom: 1px #DEDEDE solid;
+    margin: 60px 0 16px;
 }
 
 .main-content__posts-group {
+    display: flex;
+    justify-content: center;
+    padding: 7px 10px;
+    margin-bottom: 60px;
+}
 
+.main-content__posts-group_big-posts {
+    gap: 20px;
+}
+
+.main-content__posts-group_small-posts {
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .posts-group__big-post-preview {
     width: 460px;
     height: 280px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 3px;
+    position: relative;
 }
 
 .posts-group__big-post-preview_the-road-ahead {
@@ -141,11 +164,13 @@ h1, h2, h3, h4, h5, p {
 .big-post-preview__header {
     color: #FFF;
     font: 400 27px/30px "Lora";
+    margin-bottom: 6px;
 }
 
 .big-post-preview__comment {
     color: rgba(255, 255, 255, 0.7);
     font: 400 14px/25px "Oxygen";
+    margin-bottom: 12px;
 }
 
 .big-post-preview__label {
@@ -155,14 +180,25 @@ h1, h2, h3, h4, h5, p {
     background-color: #DD783F;
     border-radius: 2px;
     padding: 6px 9px 7px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.big-post-preview__footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .big-post-preview__author-info {
-
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .author-info__avatar {
-
+    height: 26px;
+    width: 26px ;
 }
 
 .author-info__name {
@@ -181,14 +217,22 @@ h1, h2, h3, h4, h5, p {
     background-color: #FCFCFC;
 }
 
+.small-post__content {
+    display: flex;
+    padding: 14px 28px 33px 13px;
+    flex-direction: column;
+}
+
 .small-post-preview__image {
     width: 100%;
     height: 150px;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .small-post-preview__header {
     color: #101315;
     font: 400 16px/21px "Lora";
+    margin-bottom: 6px;
 }
 
 .small-post-preview__comment {
@@ -198,11 +242,19 @@ h1, h2, h3, h4, h5, p {
 
 .small-post-preview__footer {
     border-top: 1px #EFEFEF solid;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
 }
 
 .small-post-preview__author-info {
     color: #999;
     font: 400 11px/35px "Oxygen";
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .small-post-preview__date {
