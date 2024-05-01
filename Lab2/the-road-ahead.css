@@ -2,8 +2,16 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
 .page__menu {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    padding: 0 250px;
 }
 
 .page__menu_top {
@@ -11,43 +19,108 @@ body {
 }
 
 .page__menu_footer {
-    color: #FFF;
-    background: center/cover no-repeat url('images/BackgroundFooter.png');
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(35, 47, 56, 0.6);
 }
 
 .menu__logo {
     font: 400 26px/26px "Lora";
 }
 
-.menu__navigation {
-
+.page__menu_footer .menu__logo {
+    color: #FFF;
 }
 
-.menu__navigation > .navigation__item {
+.menu__navigation {
+    display: flex;
+    height: 40px;
+}
+
+.menu__navigation .navigation__item {
     color: #2E2E2E;
 }
 
-.menu__navigation_footer > .navigation__item {
+.menu__navigation_footer .navigation__item {
     color: rgba(255, 255, 255, 0.6);
 }
 
 .navigation__item {
     font: 400 12px/20px "Oxygen";
-    letter-spacing: 0.6px;
+    letter-spacing: .6px;
     text-decoration: 0;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.page__footer-container {
+    background: center/cover no-repeat url('images/footerBackground.png');
+    padding-top: 62px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 250px 90px;
+}
+
+.footer__form-label {
+    color: #EFEFEF;
+    font: 400 25px/30px "Oxygen";
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 15px 17px;
+    border-bottom: 1px #DEDEDE solid;
+}
+
+.form__input-container {
+    display: flex;
+}
+
+.form__input-email {
+    border: 0;
+    width: 375px;
+    padding: 18px 35px;
+    font: 400 12px/14px "Roboto";
+    color: #817F83;
+    border-radius: 3px 0 0 3px;
+}
+
+.form__input-submit {
+    border: 0;
+    padding: 18px 43px;
+    font: 400 12px/14px "Roboto";
+    color: #F8F8F8;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.form__input-email:focus-visible,
+.form__input-submit:focus-visible {
+    outline: 0;
 }
 
 .page__main-content {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .main-content__post-headline {
-
+    margin: 89px 0 38px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .post-headline__main-header {
     color: #2E2E2E;
-    font: 400 50px/51px;
+    font: 400 50px/51px "Lora";
     letter-spacing: 2px;
     text-align: center;
 }
@@ -70,4 +143,5 @@ body {
 .main-content__paragraph {
     color: #101315;
     font: 400 24px/35px "Oxygen";
+    margin-bottom: 1em;
 }

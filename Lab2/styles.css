@@ -33,10 +33,9 @@ h1, h2, h3, h4, h5, p {
 .menu__navigation {
     display: flex;
     height: 40px;
-
 }
 
-.menu__navigation > .navigation__item {
+.menu__navigation .navigation__item {
     color: #FFF;
 }
 
