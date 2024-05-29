@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, p {
 .page__top-panel {
     width: 100%;
     height: 500px;
-    background: center/cover no-repeat url('images/BackgroundHeader.png');
+    background: center/cover no-repeat url('../images/BackgroundHeader.png');
 }
 
 .page__menu {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .page__footer-container {
-    background: center/cover no-repeat url('images/footerBackground.png');
+    background: center/cover no-repeat url('../images/footerBackground.png');
     padding-top: 62px;
     display: flex;
     flex-direction: column;
@@ -199,14 +199,15 @@ h1, h2, h3, h4, h5, p {
     justify-content: flex-end;
     border-radius: 3px;
     position: relative;
+    background: center/cover no-repeat;
 }
 
 .posts-group__big-post-preview_the-road-ahead {
-    background: center/cover no-repeat url('images/TheRoadAhead.png')
+    background: center/cover no-repeat url('../images/TheRoadAhead.png')
 }
 
 .posts-group__big-post-preview_from-top-down {
-    background: center/cover no-repeat url('images/FromTopDown.png');
+    background: center/cover no-repeat url('../images/FromTopDown.png');
 }
 
 .big-post-preview__header {
