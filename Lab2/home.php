@@ -6,7 +6,7 @@ $posts = [
       'img_modifier' => 'TheRoadAhead',
       'author' => 'Mat Vogels',
       'date' => 'September 25, 2015',
-      'featured' => false,
+      'adventure' => false,
     ],
     [
         'title' => 'From Top Down',
@@ -14,7 +14,7 @@ $posts = [
         'img_modifier' => 'FromTopDown',
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
-        'featured' => true,
+        'adventure' => true,
     ],
 ];
 ?>
@@ -59,33 +59,9 @@ $posts = [
         <div class="main-content__posts-group main-content__posts-group_big-posts">
             <?php
                 foreach ($posts as $post) {
-                include 'post_preview.php';
-            }
+                    include 'post_preview.php';
+                }
             ?>
-            <div class="posts-group__big-post-preview posts-group__big-post-preview_the-road-ahead">
-                <p class="big-post-preview__header">The Road Ahead</p>
-                <p class="big-post-preview__comment">The road ahead might be paved - it might not be.</p>
-                <div class="big-post-preview__footer">
-                    <div class="big-post-preview__author-info">
-                        <img src="./images/MatVogels.png" alt="MatVogels" class="author-info__avatar">
-                        <p class="author-info__name">Mat Vogels</p>
-                    </div>
-                    <div class="big-post-preview__date">September 25, 2015</div>
-                </div>
-            </div>
-
-            <div class="posts-group__big-post-preview posts-group__big-post-preview_from-top-down">
-                <div class="big-post-preview__label">ADVENTURE</div>
-                <p class="big-post-preview__header">From Top Down</p>
-                <p class="big-post-preview__comment">Once a year, go someplace you’ve never been before.</p>
-                <div class="big-post-preview__footer">
-                    <div class="big-post-preview__author-info">
-                        <img src="./images/WilliamWong.png" alt="WilliamWong"  class="author-info__avatar">
-                        <p class="author-info__name">William Wong</p>
-                    </div>
-                    <div class="big-post-preview__date">September 25, 2015</div>
-                </div>
-            </div>
         </div>
         <h3 class="main-content__header">Most Recent</h3>
         <div class="main-content__posts-group main-content__posts-group_small-posts">
